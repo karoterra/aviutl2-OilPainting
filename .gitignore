@@ -1,0 +1,9 @@
+[Pp]ublish/
+[Bb]in/
+[Bb]uild/
+aviutl/
+.vscode/
+
+*.dll
+*.VC.DB*
+*.aps
