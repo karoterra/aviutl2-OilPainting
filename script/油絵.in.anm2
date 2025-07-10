@@ -1,0 +1,12 @@
+--information:${INFO} ${VERSION} by ${AUTHOR}
+--label:加工
+--track@blurSize:ぼかし,0,100,10,1
+--select@luminanceMode:輝度モード=0,加重平均=0,平均=1,最大値=2
+--[[pixelshader@kuwahara_naive:
+${SHADER_kuwahara_naive}
+]]
+
+local blurSize = math.floor(blurSize)
+local luminanceMode = luminanceMode or 0
+
+obj.pixelshader("kuwahara_naive", "object", {"object"}, {blurSize, luminanceMode}, "copy")
