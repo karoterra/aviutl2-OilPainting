@@ -5,8 +5,6 @@ Kuwahara filter により油絵風の加工を施す
 
 [AviUtl1 用の油絵スクリプト](https://github.com/karoterra/aviutl-OilPainting) を AviUtl2 用に移植したものです。
 
-高橋直哉氏の[油絵スクリプト](https://www.nicovideo.jp/watch/sm35695116)の処理速度を向上させたものです。
-
 ## 動作環境
 
 AviUtl ExEdit2 version 2.0beta1 にて動作確認しました。
@@ -37,3 +35,6 @@ AviUtl ExEdit2 version 2.0beta1 にて動作確認しました。
 このスクリプトは高橋直哉氏の[油絵スクリプト](https://www.nicovideo.jp/watch/sm35695116)の処理速度向上を目的として開発したものです。
 
 ## Change Log
+
+### v1.0.0 (2025-07-12)
+- 初版公開

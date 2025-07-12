@@ -22,7 +22,7 @@ def process_script(path: Path, info: str, version: str, author: str, params: dic
 
 def main():
     AUTHOR = "karoterra"
-    VERSION = "v0.1.0"
+    VERSION = "v1.0.0"
 
     SHADER_kuwahara_naive = Path("script/kuwahara_naive.hlsl").read_text(encoding="utf-8")
 
