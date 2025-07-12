@@ -32,7 +32,7 @@ def main():
     src_list = [
         {
             "file": "script/油絵.in.anm2",
-            "info": "油絵 for AviUtl2",
+            "info": "油絵KR for AviUtl2",
         }
     ]
 
@@ -51,7 +51,7 @@ def main():
         )
         script_texts.append(text)
 
-    output_file = build_dir / "油絵.anm2"
+    output_file = build_dir / "油絵KR.anm2"
     output_file.write_text("\n".join(script_texts), encoding="utf-8", newline="\r\n")
 
 
