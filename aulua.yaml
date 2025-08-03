@@ -1,0 +1,17 @@
+project:
+  variables:
+    VERSION: v1.0.0
+    AUTHOR: karoterra
+
+build:
+  out_dir: build
+
+install:
+  out_dir: C:\ProgramData\aviutl2\Script\karoterra\
+
+scripts:
+  - name: 油絵KR.anm2
+    sources:
+      - path: script/油絵.in.anm2
+        variables:
+          INFO: 油絵KR for AviUtl2
