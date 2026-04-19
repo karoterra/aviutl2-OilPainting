@@ -1,4 +1,4 @@
---information:${INFO} ${VERSION} by ${AUTHOR}
+--information:${INFO} ${PACKAGE_VERSION} by ${AUTHOR}
 --label:加工
 --filter
 

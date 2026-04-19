@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup aulua
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag=$(gh api repos/karoterra/aviutl2-aulua/releases/latest --jq '.tag_name')
+          archive="aulua-${tag}-windows-x64.zip"
+          mkdir -p aulua
+          gh release download -R karoterra/aviutl2-aulua $tag -p $archive -D aulua
+          unzip aulua/$archive -d aulua
+          echo `pwd`/aulua > $GITHUB_PATH
+
+      - name: Check aulua version
+        run: |
+          aulua --version
+
+      - name: Build and Pack
+        run: |
+          aulua pack
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: build/*.zip
+          generate_release_notes: true
