@@ -14,7 +14,7 @@ package:
   id: Karoterra.OilPainting
   name: 油絵KR
   information: 油絵KR for AviUtl2 v{version} by {AUTHOR}
-  version: 1.0.0
+  version: 1.1.0
   uninstall_sub_folder_file: false
   file_name: "{id}-v{version}.au2pkg.zip"
   script_sub_dir: "{id}"
