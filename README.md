@@ -1,4 +1,7 @@
-# AviUtl スクリプト - 油絵KR
+# AviUtl2 スクリプト - 油絵KR
+
+![GitHub Release](https://img.shields.io/github/v/release/karoterra/aviutl2-OilPainting)
+[![AviUtl2 Catalog](https://aviutl2-catalog-badge.sevenc7c.workers.dev/badge/v/Karoterra.OilPainting)](https://aviutl2-catalog-badge.sevenc7c.workers.dev/package/Karoterra.OilPainting)
 
 Kuwahara filter により油絵風の加工を施す
 [AviUtl2](http://spring-fragrance.mints.ne.jp/aviutl/) スクリプトです。
@@ -11,13 +14,22 @@ AviUtl ExEdit2 version 2.0beta1 にて動作確認しました。
 
 ## 導入方法
 
-1. [Releases](https://github.com/karoterra/aviutl2-OilPainting/releases/) から最新版の ZIP ファイルをダウンロードしてください。
-2. ZIP ファイルを展開し、以下のファイルを `C:\ProgramData\aviutl2\Script\` または `C:\ProgramData\aviutl2\Script\<任意の名前>\` に配置してください。
-   - `油絵KR.anm2`
+### AviUtl2 カタログからインストール
+
+[AviUtl2 カタログ](https://github.com/Neosku/aviutl2-catalog) がセットアップ済みであれば以下のリンクからインストールできます。
+
+[![AviUtl2 Catalog](https://aviutl2-catalog-badge.sevenc7c.workers.dev/badge/v/Karoterra.OilPainting)](https://aviutl2-catalog-badge.sevenc7c.workers.dev/package/Karoterra.OilPainting)
+
+### パッケージファイルからインストール
+
+1. [Releases](https://github.com/karoterra/aviutl2-OilPainting/releases/) から最新版のパッケージファイル `.au2pkg.zip` をダウンロードしてください。
+2. ダウンロードしたパッケージファイルを AviUtl2 のプレビュー画面にドラッグアンドドロップしてください。
 
 ## 使い方
 
 お好きなオブジェクトにアニメーション効果「油絵KR」を適用してください。
+フィルタオブジェクトとしても利用できます。
+
 デフォルトでは「加工」カテゴリの中にあります。
 
 - ぼかし: ぼかしの強さ(0だと変化なし)
