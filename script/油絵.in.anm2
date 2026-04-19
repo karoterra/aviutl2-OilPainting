@@ -1,5 +1,7 @@
 --information:${INFO} ${VERSION} by ${AUTHOR}
 --label:加工
+--filter
+
 ---$track:ぼかし
 ---min=0
 ---max=100
